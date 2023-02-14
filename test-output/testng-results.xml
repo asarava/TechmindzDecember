@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="19" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-14T11:59:13 IST" name="Suite" finished-at="2023-02-14T12:02:38 IST" duration-ms="205276">
+    <groups>
+    </groups>
+    <test started-at="2023-02-14T11:59:13 IST" name="Test" finished-at="2023-02-14T12:02:38 IST" duration-ms="205276">
+      <class name="com.test.HomePageLayerTestcases">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T11:59:13 IST" name="setExtent" finished-at="2023-02-14T11:59:13 IST" duration-ms="343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T11:59:13 IST" name="setUp" finished-at="2023-02-14T11:59:36 IST" duration-ms="22671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickOnAboutus()[pri:1, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T11:59:36 IST" name="clickOnAboutus" finished-at="2023-02-14T11:59:40 IST" duration-ms="4416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnAboutus -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T11:59:40 IST" name="tearDown" finished-at="2023-02-14T11:59:40 IST" duration-ms="399" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOnAboutus status=SUCCESS method=HomePageLayerTestcases.clickOnAboutus()[pri:1, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="clickOnContactButton()[pri:2, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T11:59:40 IST" name="clickOnContactButton" finished-at="2023-02-14T11:59:48 IST" duration-ms="7796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnContactButton -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T11:59:48 IST" name="tearDown" finished-at="2023-02-14T11:59:51 IST" duration-ms="2413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOnContactButton status=SUCCESS method=HomePageLayerTestcases.clickOnContactButton()[pri:2, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="clickOnLaptop()[pri:3, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T11:59:51 IST" name="clickOnLaptop" finished-at="2023-02-14T11:59:53 IST" duration-ms="2209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnLaptop -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T11:59:53 IST" name="tearDown" finished-at="2023-02-14T11:59:53 IST" duration-ms="378" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOnLaptop status=SUCCESS method=HomePageLayerTestcases.clickOnLaptop()[pri:3, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="clickOnMonitor()[pri:4, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T11:59:53 IST" name="clickOnMonitor" finished-at="2023-02-14T11:59:58 IST" duration-ms="4255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnMonitor -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T11:59:58 IST" name="tearDown" finished-at="2023-02-14T11:59:58 IST" duration-ms="362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOnMonitor status=SUCCESS method=HomePageLayerTestcases.clickOnMonitor()[pri:4, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="clickOnPhone()[pri:5, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T11:59:58 IST" name="clickOnPhone" finished-at="2023-02-14T12:00:02 IST" duration-ms="4250" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at com.test.HomePageLayerTestcases.clickOnPhone(HomePageLayerTestcases.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnPhone -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:00:02 IST" name="tearDown" finished-at="2023-02-14T12:00:03 IST" duration-ms="340" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOnPhone status=FAILURE method=HomePageLayerTestcases.clickOnPhone()[pri:5, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="clickToCart()[pri:6, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:00:03 IST" name="clickToCart" finished-at="2023-02-14T12:00:09 IST" duration-ms="6563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickToCart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:00:09 IST" name="tearDown" finished-at="2023-02-14T12:00:09 IST" duration-ms="329" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickToCart status=SUCCESS method=HomePageLayerTestcases.clickToCart()[pri:6, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="clickOnHome()[pri:7, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:00:09 IST" name="clickOnHome" finished-at="2023-02-14T12:00:15 IST" duration-ms="5105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnHome -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:00:15 IST" name="tearDown" finished-at="2023-02-14T12:00:15 IST" duration-ms="344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOnHome status=SUCCESS method=HomePageLayerTestcases.clickOnHome()[pri:7, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="PlaceOrderPresent()[pri:10, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:00:15 IST" name="PlaceOrderPresent" finished-at="2023-02-14T12:00:21 IST" duration-ms="6369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlaceOrderPresent -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:00:21 IST" name="tearDown" finished-at="2023-02-14T12:00:22 IST" duration-ms="332" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PlaceOrderPresent status=SUCCESS method=HomePageLayerTestcases.PlaceOrderPresent()[pri:10, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="EmailAddressPresent()[pri:11, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:00:22 IST" name="EmailAddressPresent" finished-at="2023-02-14T12:00:25 IST" duration-ms="3040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmailAddressPresent -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:00:25 IST" name="tearDown" finished-at="2023-02-14T12:00:25 IST" duration-ms="319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EmailAddressPresent status=SUCCESS method=HomePageLayerTestcases.EmailAddressPresent()[pri:11, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="PlaceOrderFields()[pri:12, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:00:25 IST" name="PlaceOrderFields" finished-at="2023-02-14T12:00:33 IST" duration-ms="8302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlaceOrderFields -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:00:33 IST" name="tearDown" finished-at="2023-02-14T12:00:34 IST" duration-ms="341" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PlaceOrderFields status=SUCCESS method=HomePageLayerTestcases.PlaceOrderFields()[pri:12, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="SignUpButtonValid()[pri:13, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:00:34 IST" name="SignUpButtonValid" finished-at="2023-02-14T12:00:42 IST" duration-ms="8540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUpButtonValid -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:00:42 IST" name="tearDown" finished-at="2023-02-14T12:00:43 IST" duration-ms="501" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SignUpButtonValid status=SUCCESS method=HomePageLayerTestcases.SignUpButtonValid()[pri:13, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="SignUpButtonexisting()[pri:14, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:00:43 IST" name="SignUpButtonexisting" finished-at="2023-02-14T12:00:56 IST" duration-ms="13154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUpButtonexisting -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:00:56 IST" name="tearDown" finished-at="2023-02-14T12:00:56 IST" duration-ms="294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SignUpButtonexisting status=SUCCESS method=HomePageLayerTestcases.SignUpButtonexisting()[pri:14, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="SignUpWithUsername()[pri:15, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:00:56 IST" name="SignUpWithUsername" finished-at="2023-02-14T12:01:05 IST" duration-ms="8918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUpWithUsername -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:01:05 IST" name="tearDown" finished-at="2023-02-14T12:01:05 IST" duration-ms="288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SignUpWithUsername status=SUCCESS method=HomePageLayerTestcases.SignUpWithUsername()[pri:15, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="SignUpWithPassword()[pri:16, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:01:05 IST" name="SignUpWithPassword" finished-at="2023-02-14T12:01:14 IST" duration-ms="8985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUpWithPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:01:14 IST" name="tearDown" finished-at="2023-02-14T12:01:15 IST" duration-ms="362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SignUpWithPassword status=SUCCESS method=HomePageLayerTestcases.SignUpWithPassword()[pri:16, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="SignUpWithBlankSpace()[pri:17, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:01:15 IST" name="SignUpWithBlankSpace" finished-at="2023-02-14T12:01:26 IST" duration-ms="11210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUpWithBlankSpace -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:01:26 IST" name="tearDown" finished-at="2023-02-14T12:01:26 IST" duration-ms="402" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SignUpWithBlankSpace status=SUCCESS method=HomePageLayerTestcases.SignUpWithBlankSpace()[pri:17, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="ClickOnLogInButtonInvalid()[pri:18, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:01:26 IST" name="ClickOnLogInButtonInvalid" finished-at="2023-02-14T12:01:41 IST" duration-ms="15070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnLogInButtonInvalid -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:01:41 IST" name="tearDown" finished-at="2023-02-14T12:01:42 IST" duration-ms="404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ClickOnLogInButtonInvalid status=SUCCESS method=HomePageLayerTestcases.ClickOnLogInButtonInvalid()[pri:18, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="ClickOnLogInButtonInvalidCases()[pri:19, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:01:42 IST" name="ClickOnLogInButtonInvalidCases" finished-at="2023-02-14T12:01:58 IST" duration-ms="16044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnLogInButtonInvalidCases -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:01:58 IST" name="tearDown" finished-at="2023-02-14T12:01:58 IST" duration-ms="425" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ClickOnLogInButtonInvalidCases status=SUCCESS method=HomePageLayerTestcases.ClickOnLogInButtonInvalidCases()[pri:19, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="ClickOnLogInButtonBlank()[pri:20, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:01:58 IST" name="ClickOnLogInButtonBlank" finished-at="2023-02-14T12:02:14 IST" duration-ms="15759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnLogInButtonBlank -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:02:14 IST" name="tearDown" finished-at="2023-02-14T12:02:14 IST" duration-ms="410" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ClickOnLogInButtonBlank status=SUCCESS method=HomePageLayerTestcases.ClickOnLogInButtonBlank()[pri:20, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="ClickOnProduct()[pri:21, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:02:14 IST" name="ClickOnProduct" finished-at="2023-02-14T12:02:23 IST" duration-ms="9066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnProduct -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:02:23 IST" name="tearDown" finished-at="2023-02-14T12:02:24 IST" duration-ms="348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ClickOnProduct status=SUCCESS method=HomePageLayerTestcases.ClickOnProduct()[pri:21, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="AddProduct()[pri:22, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:02:24 IST" name="AddProduct" finished-at="2023-02-14T12:02:36 IST" duration-ms="12261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProduct -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:02:36 IST" name="tearDown" finished-at="2023-02-14T12:02:36 IST" duration-ms="306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddProduct status=SUCCESS method=HomePageLayerTestcases.AddProduct()[pri:22, instance:com.test.HomePageLayerTestcases@206a70ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.test.HomePageLayerTestcases@206a70ef]" started-at="2023-02-14T12:02:36 IST" name="endReport" finished-at="2023-02-14T12:02:38 IST" duration-ms="1426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.test.HomePageLayerTestcases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
