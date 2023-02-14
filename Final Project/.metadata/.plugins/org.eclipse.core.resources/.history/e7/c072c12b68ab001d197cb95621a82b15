@@ -1,0 +1,8 @@
+package com.page;
+
+import com.base.TestBase;
+
+public class HomePage extends TestBase {
+
+	
+}

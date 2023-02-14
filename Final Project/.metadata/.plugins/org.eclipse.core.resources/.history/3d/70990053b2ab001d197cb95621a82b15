@@ -1,0 +1,57 @@
+package com.page;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.base.TestBase;
+import com.wrapper.Wrapper;
+
+public class HomePage extends TestBase {
+	Wrapper objWrapper = new Wrapper();
+	
+	@FindBy (id="cat")
+	WebElement pCategories;
+	
+	@FindBy (xpath = "(//a[@class='nav-link'])[1]")
+	WebElement pHome;
+	
+	@FindBy (xpath= "(//a[@class='hrefch'])[1]")
+	WebElement pSamsung;
+	
+	@FindBy (xpath = "//a[@onclick='addToCart(1)']")
+	WebElement pAddCart;
+	
+	@FindBy (xpath = "(//a[@class='nav-link'])[4]")
+	WebElement pCartPage;
+	
+	public void clickHome() {
+		pHome.click();
+	}
+	public void clickProduct() {
+		objWrapper.waitForElementProduct(driver, pSamsung);
+		pSamsung.click();
+	}
+	
+	public void clickAddToCart() {
+		objWrapper.waitForElement(driver, pAddCart);
+	   pAddCart.click();
+	}
+
+	public void clickCartMenu() {
+		objWrapper.waitForElement(driver, pCartPage);
+	   pCartPage.click();
+	
+	
+	
+	public HomePage() {
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void categoryClick() {
+		pCategories.click();
+	}
+	
+	
+	
+}

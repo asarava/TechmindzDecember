@@ -1,0 +1,17 @@
+<h2>Methods that were not run</h2><table>
+<tr><td>com.test.TestCases.URLAccess</td></tr>
+<tr><td>com.test.TestCases.AboutUsButtonClick</td></tr>
+<tr><td>com.test.TestCases.AboutUsCloseButtonFunctionality</td></tr>
+<tr><td>com.test.TestCases.ContactByGivingValidData</td></tr>
+<tr><td>com.test.TestCases.LoginWithValidUserNameAndPassword</td></tr>
+<tr><td>com.test.TestCases.ContactByGivingInvalidData</td></tr>
+<tr><td>com.test.TestCases.LoginWithInvalidUserNameAndInvalidPassword</td></tr>
+<tr><td>com.test.TestCases.LoginWithValidUserNameAndInvalidPassword</td></tr>
+<tr><td>com.test.TestCases.SignUpWithPasswordOnly</td></tr>
+<tr><td>com.test.TestCases.SignUpWithUserNameOnly</td></tr>
+<tr><td>com.test.TestCases.SelectingCategories</td></tr>
+<tr><td>com.test.TestCases.AddToCart</td></tr>
+<tr><td>com.test.TestCases.LoginWithInvalidUserNameAndValidPassword</td></tr>
+<tr><td>com.test.TestCases.ContactButtonClick</td></tr>
+<tr><td>com.test.TestCases.PlayButtonFunctionality</td></tr>
+</table>

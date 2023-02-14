@@ -1,0 +1,70 @@
+package com.page;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.base.TestBase;
+import com.wrapper.Wrapper;
+
+public class SignUp extends TestBase{
+	Wrapper objWrapper = new Wrapper();
+	
+	//String pTextData = "alertText";
+	
+	public SignUp() {
+		PageFactory.initElements(driver, this);
+	}
+
+	@FindBy(id = "signin2")
+    WebElement pSignUpButton;
+	
+	@FindBy (id = "sign-username")
+	WebElement pSignUpUserName;
+	
+	@FindBy (id = "sign-password")
+	WebElement pSignUpPassword;
+	
+	@FindBy (xpath = "(//button[@type='button'])[6]")
+	WebElement pSignUp;
+	
+	@FindBy (xpath = "(//button[@type='button'])[5]")
+	WebElement pSignUpCloseButton;
+	
+
+	public void clickSignUpButton() {
+		pSignUpButton.click();
+	}
+
+	public void  signUpUserNameEnterText (String pValue) {
+	objWrapper.enterText(driver, pSignUpUserName, "Diyababy");
+	}
+	
+	public void signUpPasswordEnterText (String pValue) {
+	objWrapper.enterText(driver, pSignUpPassword, "diyababy123");
+	}
+	
+	public void clickSignUpCloseButton() {
+		pSignUpCloseButton.click();
+	}
+	
+	public void clickSignUp() {
+		objWrapper.waitForElement(driver, pSignUp);
+		pSignUp.click();
+		objWrapper.waitForAlert(driver);
+		driver.switchTo().alert().getText();
+		objWrapper.dismissAlert(driver, pSignUp);
+		objWrapper.Alert(driver);
+		//pSignUpCloseButton.click();
+	}
+	
+	public void signUpUsernameClearText() {
+		objWrapper.clearText(driver, pSignUpUserName);
+	}
+	
+	public void signUpPasswordClearText() {
+		objWrapper.clearText(driver, pSignUpPassword);
+	}
+
+
+}

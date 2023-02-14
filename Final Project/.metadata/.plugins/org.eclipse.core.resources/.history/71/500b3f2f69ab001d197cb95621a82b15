@@ -1,0 +1,33 @@
+package com.page;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.base.TestBase;
+import com.wrapper.Wrapper;
+
+public class HomePage extends TestBase {
+	Wrapper objWrapper = new Wrapper();
+	
+	@FindBy (id="cat")
+	WebElement pCategories;
+	
+	
+	
+	
+	
+	
+	
+	
+	public HomePage() {
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void categoryClick() {
+		pCategories.click();
+	}
+	
+	
+	
+}

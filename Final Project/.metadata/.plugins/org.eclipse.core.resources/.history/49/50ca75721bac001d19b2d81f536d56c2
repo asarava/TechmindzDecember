@@ -1,0 +1,305 @@
+package com.test;
+
+import java.io.IOException;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import com.base.TestBase;
+import com.page.AboutUs;
+import com.page.Contact;
+import com.page.HomePage;
+import com.page.LogIn;
+import com.page.SignUp;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+import com.utilities.Utilities;
+import com.wrapper.Wrapper;
+
+public class TestCases extends TestBase {
+	SignUp homePage;
+	LogIn homePage1;
+	AboutUs homePage2;
+	Contact homePage3;
+	HomePage homePage4;
+	Wrapper objWrapper;
+	Utilities objUtilities;
+
+	public ExtentReports extent;
+	public ExtentTest extentTest;
+
+	public TestCases() {
+		super();
+	}
+
+	@BeforeTest
+	public void setExtent() {
+		extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReport.html", true);
+		extent.addSystemInfo("Host Name", "Revathy C");
+		extent.addSystemInfo("User Name", "Revathy C");
+		extent.addSystemInfo("Environment", "Final Project");
+	}
+
+	@BeforeClass
+	public void SetUp() {
+		initialization();
+		homePage = new SignUp();
+		homePage1 = new LogIn();
+		homePage2 = new AboutUs();
+		homePage3 = new Contact();
+		homePage4 = new HomePage();
+		objUtilities = new Utilities();
+		objWrapper = new Wrapper();
+	}
+
+//URL access
+	@Test(priority = 10)
+	public void URLAccess() {
+		extentTest = extent.startTest("URLAccess");
+		homePage.URLClick();
+	}
+
+//SignUp with existing UserName and password
+	@Test(priority = 1)
+	public void signupWithExistingUsernameAndPassword() throws InterruptedException {
+		extentTest = extent.startTest("signupWithExistingUsernameAndPassword");
+		homePage.clickSignUpButton();
+		homePage.signUpUserNameEnterText("Diyababy");
+		homePage.signUpPasswordEnterText("diyababy123");
+		homePage.clickSignUp();
+		objWrapper.waitForAlert(driver);
+		String expected = "This user already exist.";
+		/*
+		 * Alert alert = driver.switchTo().alert(); String alertText = alert.getText();
+		 * System.out.print(alertText); Assert.assertEquals(alertText,
+		 * "This user already exist."); //Assert.assertTrue(true);
+		 * //homePage.clickAlertSignUp(); homePage.clickSignUpCloseButton();
+		 */
+
+	}
+
+//SignUp with UserName only
+	@Test(enabled = false)
+	public void SignUpWithUserNameOnly() throws InterruptedException {
+		extentTest = extent.startTest("SignUpWithUserNameOnly");
+		homePage.clickSignUpButton();
+		homePage.signUpUserNameEnterText("Diyababy");
+		homePage.clickSignUp();
+		objWrapper.waitForAlert(driver);
+		// String expected = "Please fill out Username and Password.";
+		Alert alert = driver.switchTo().alert();
+		String alertText = alert.getText();
+		// String actual = alert.getText();
+		Assert.assertEquals(alertText, "Please fill out Username and Password.");
+		// homePage.clickAlertSignUp();
+		homePage.clickSignUpCloseButton();
+	}
+
+//SignUp with Password only
+	@Test(enabled = false)
+	public void SignUpWithPasswordOnly() {
+		// homePage.clickSignUpButton();
+		extentTest = extent.startTest("SignUpWithPasswordOnly");
+		homePage.signUpPasswordEnterText("diyababy123");
+		homePage.clickSignUp();
+		objWrapper.waitForAlert(driver);
+		Alert alert = driver.switchTo().alert();
+		String alertText = alert.getText();
+		Assert.assertEquals(alertText, "Please fill out Username and Password.");
+		homePage.clickSignUpCloseButton();
+	}
+
+//Login with valid UserName and Password
+	@Test(enabled = false)
+	public void LoginWithValidUserNameAndPassword() throws InterruptedException {
+		extentTest = extent.startTest("LoginWithValidUserNameAndPassword");
+		homePage1.clickLogInButton();
+		homePage1.logInUserNameEnterText("Diyababy");
+		homePage1.logInPasswordEnterText("diyababy123");
+		homePage1.clickLogIn();
+		homePage1.wait(1000);
+		homePage1.logOut();
+	}
+
+//Login with valid UserName and invalid Password
+	@Test(enabled = false)
+	public void LoginWithValidUserNameAndInvalidPassword() throws InterruptedException {
+		extentTest = extent.startTest("LoginWithValidUserNameAndInvalidPassword");
+		homePage1.clickLogInButton();
+		homePage1.logInUserNameEnterText("Diyababy");
+		homePage1.logInPasswordEnterText("123");
+		homePage1.clickLogIn();
+		objWrapper.waitForAlert(driver);
+		Alert alert = driver.switchTo().alert();
+		String alertText = alert.getText();
+		Assert.assertEquals(alertText, "wrong user name or password.");
+	}
+
+//Login with invalid UserName and valid Password
+	@Test(enabled = false)
+	public void LoginWithInvalidUserNameAndValidPassword() throws InterruptedException {
+		extentTest = extent.startTest("LoginWithInvalidUserNameAndValidPassword");
+		homePage1.clickLogInButton();
+		homePage1.logInUserNameEnterText("Diya");
+		homePage1.logInPasswordEnterText("diyababy123");
+		homePage1.clickLogIn();
+		objWrapper.waitForAlert(driver);
+		Alert alert = driver.switchTo().alert();
+		String alertText = alert.getText();
+		Assert.assertEquals(alertText, "User does not exist.");
+	}
+
+//Login with invalid UserName and invalid Password
+	@Test(enabled = false)
+	public void LoginWithInvalidUserNameAndInvalidPassword() throws InterruptedException {
+		extentTest = extent.startTest("LoginWithInvalidUserNameAndInValidPassword");
+		homePage1.clickLogInButton();
+		homePage1.logInUserNameEnterText("Diyas");
+		homePage1.logInPasswordEnterText("diyababy1233");
+		homePage1.clickLogIn();
+		objWrapper.waitForAlert(driver);
+		Alert alert = driver.switchTo().alert();
+		String alertText = alert.getText();
+		Assert.assertEquals(alertText, "User does not exists.");
+	}
+
+//About Us page access
+	@Test(enabled = false)
+	public void AboutUsButtonClick() {
+		extentTest = extent.startTest("AboutUsButtonClick");
+		homePage2.clickAboutUsButton();
+	}
+
+//play button functionality
+	@Test(enabled = false)
+	public void PlayButtonFunctionality() {
+		extentTest = extent.startTest("PlayButtonFunctionality");
+		homePage2.clickAboutUsButton();
+		homePage2.clickPlayButton();
+	}
+
+//AboutUs close button functionality
+	@Test(enabled = false)
+	public void AboutUsCloseButtonFunctionality() {
+		extentTest = extent.startTest("AboutUsCloseButtonFunctionality");
+		homePage2.clickAboutUsCloseButton();
+	}
+
+//Contact page access
+	@Test(enabled = false)
+	public void ContactButtonClick() {
+		extentTest = extent.startTest("ContactButtonClick");
+		homePage3.clickContactButton();
+		homePage3.clickContactCloseButton();
+	}
+
+//Contact by giving valid data
+	@Test(enabled = false)
+	public void ContactByGivingValidData() {
+		extentTest = extent.startTest("ContactByGivingValidData");
+		homePage3.contactEmailEnterText("revathyc3@gmail.com");
+		homePage3.contactNameEnterText("Revathy");
+		homePage3.contactMessageEnterText("Hi");
+		homePage3.clickSendMessage();
+		// objWrapper.waitForAlert(driver);
+		// String expected = "Thanks for the message!!";
+		// Alert alert = driver.switchTo().alert();
+		// String alertText = alert.getText();
+		// System.out.print(alertText);
+		// Assert.assertEquals(alertText, "Thanks for the message!!");
+		// Assert.assertEquals(true, true);
+	}
+
+//Contact by giving invalid data
+	@Test(enabled = false)
+	public void ContactByGivingInvalidData() {
+		extentTest = extent.startTest("ContactByGivingInvalidData");
+		homePage3.contactEmailEnterText("revathy");
+		homePage3.contactNameEnterText("12345");
+		homePage3.contactMessageEnterText("678910");
+		homePage3.clickSendMessage();
+		// String expected = "Thanks for the message!!";
+		Alert alert = driver.switchTo().alert();
+		String alertText = alert.getText();
+		System.out.print(alertText);
+		Assert.assertEquals(alertText, "Error message");
+	}
+
+//Selecting categories
+	@Test(enabled = false)
+	public void SelectingCategories() {
+		extentTest = extent.startTest("SelectingCategories");
+		// homePage4.clickHome();
+		homePage4.categoryClick();
+	}
+
+//Add to Cart functionality
+	@Test(enabled = false)
+	public void AddToCart() {
+		extentTest = extent.startTest("AddToCart");
+		homePage4.clickProduct();
+		homePage4.clickAddToCart();
+	}
+
+//Cart Page Access
+	@Test(enabled = false)
+	public void CartPageAccess() {
+		extentTest = extent.startTest("CartPageAccess");
+		homePage4.clickCartMenu();
+	}
+
+//Place order button click
+	@Test(enabled = false)
+	public void PlaceOrderButtonClick() {
+		extentTest = extent.startTest("PlaceOrderButtonClick");
+		homePage4.PlaceOrder();
+	}
+
+//Place order details fillup
+	@Test(enabled = false)
+	public void PlaceOrderDetailsFillUp() {
+		extentTest = extent.startTest("PlaceOrderDetailsFillUp");
+		homePage4.EnterOrderName("Revathy");
+		homePage4.EnterOrderCountry("India");
+		homePage4.EnterOrderCity("Kochi");
+		homePage4.EnterOrderCreditCard("1234567891234567");
+		homePage4.EnterOrderMonth("February");
+		homePage4.EnterOrderYear("2023");
+		homePage4.ClickPurchaseButton();
+	}
+
+	@AfterMethod
+	public void tearDown(ITestResult result) throws IOException {
+
+		if (result.getStatus() == ITestResult.FAILURE) {
+			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS " + result.getName());
+			extentTest.log(LogStatus.FAIL, "TEST CASE FAILED IS " + result.getThrowable());
+			String screenshotPath = objUtilities.getScreenshot(driver, result.getName());
+			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
+		} else if (result.getStatus() == ITestResult.SKIP) {
+			extentTest.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName());
+		} else if (result.getStatus() == ITestResult.SUCCESS) {
+			extentTest.log(LogStatus.PASS, "Test Case PASSED IS " + result.getName());
+			String screenshotPath = objUtilities.getScreenshot(driver, result.getName());
+			extentTest.log(LogStatus.PASS, extentTest.addScreenCapture(screenshotPath));
+		}
+
+		extent.endTest(extentTest);
+	}
+
+	@AfterTest
+	public void endReport() {
+		extent.flush();
+		extent.close();
+		driver.quit();
+	}
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="Value1" value="Diyababy"></parameter>
+  <parameter name="Value2" value="diyababy123"></parameter>
+  <parameter name="Value3" value="Diyababy"></parameter>
+  <parameter name="Value4" value="diyababy123"></parameter>
+    <classes>
+      <class name="com.test.HomePageTestCases"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
