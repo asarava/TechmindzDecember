@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="34" passed="33" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-14T21:46:42 IST" name="Suite" finished-at="2023-02-14T21:49:16 IST" duration-ms="154154">
+    <groups>
+    </groups>
+    <test started-at="2023-02-14T21:46:42 IST" name="Test" finished-at="2023-02-14T21:49:16 IST" duration-ms="154154">
+      <class name="com.test.HomePageTestCases">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:46:42 IST" name="setUp" finished-at="2023-02-14T21:47:07 IST" duration-ms="25304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="URL(java.lang.String,java.lang.String)[pri:1, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:47:09 IST" name="URL" data-provider="dataprovider1" finished-at="2023-02-14T21:47:10 IST" duration-ms="357" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PRODUCT STORE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PRODUCT STORE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- URL -->
+        <test-method signature="signUp(java.lang.String,java.lang.String)[pri:2, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:47:10 IST" name="signUp" data-provider="dataprovider2" finished-at="2023-02-14T21:47:13 IST" duration-ms="2806" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Demo User1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method signature="signUp(java.lang.String,java.lang.String)[pri:2, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:47:13 IST" name="signUp" data-provider="dataprovider2" finished-at="2023-02-14T21:47:15 IST" duration-ms="2243" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Demo User2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[green commet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method signature="signUp(java.lang.String,java.lang.String)[pri:2, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:47:15 IST" name="signUp" data-provider="dataprovider2" finished-at="2023-02-14T21:47:18 IST" duration-ms="2717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DMEO USER3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GREEN COMMET]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method signature="signUp(java.lang.String,java.lang.String)[pri:2, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:47:18 IST" name="signUp" data-provider="dataprovider2" finished-at="2023-02-14T21:47:21 IST" duration-ms="3252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dmeo User4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gre]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method signature="signUp(java.lang.String,java.lang.String)[pri:2, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:47:21 IST" name="signUp" data-provider="dataprovider2" finished-at="2023-02-14T21:47:24 IST" duration-ms="3397" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dmeo User5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[To resolve this issue, you need to make sure that the "com.utilities.Utilities.book" object is properly initialized and has a value before it is used in your code. This can be done by creating a new instance of the Workbook class, or by checking if the object is null and initializing it before trying to use it.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method signature="signUp(java.lang.String,java.lang.String)[pri:2, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:47:24 IST" name="signUp" data-provider="dataprovider2" finished-at="2023-02-14T21:47:28 IST" duration-ms="3422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dmeo User6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Green123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method signature="signUp(java.lang.String,java.lang.String)[pri:2, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:47:28 IST" name="signUp" data-provider="dataprovider2" finished-at="2023-02-14T21:47:30 IST" duration-ms="2302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DemoUser7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[green$$&&@@!!**\\]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method signature="signUpWithoutPassword(java.lang.String,java.lang.String)[pri:3, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:47:30 IST" name="signUpWithoutPassword" data-provider="dataprovider3" finished-at="2023-02-14T21:47:32 IST" duration-ms="1416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithoutPassword -->
+        <test-method signature="signUpWithoutUserName(java.lang.String,java.lang.String)[pri:3, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:47:32 IST" name="signUpWithoutUserName" data-provider="dataprovider4" finished-at="2023-02-14T21:47:33 IST" duration-ms="1334" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithoutUserName -->
+        <test-method signature="loginWithDiffUserNameAndPassword(java.lang.String,java.lang.String)[pri:4, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:47:34 IST" name="loginWithDiffUserNameAndPassword" data-provider="dataprovider5" finished-at="2023-02-14T21:47:41 IST" duration-ms="7055" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Demo User1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithDiffUserNameAndPassword -->
+        <test-method signature="loginWithDiffUserNameAndPassword(java.lang.String,java.lang.String)[pri:4, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:47:41 IST" name="loginWithDiffUserNameAndPassword" data-provider="dataprovider5" finished-at="2023-02-14T21:47:46 IST" duration-ms="4971" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Demo User2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[green commet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithDiffUserNameAndPassword -->
+        <test-method signature="loginWithDiffUserNameAndPassword(java.lang.String,java.lang.String)[pri:4, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:47:46 IST" name="loginWithDiffUserNameAndPassword" data-provider="dataprovider5" finished-at="2023-02-14T21:47:53 IST" duration-ms="7608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DMEO USER3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GREEN COMMET]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithDiffUserNameAndPassword -->
+        <test-method signature="loginWithDiffUserNameAndPassword(java.lang.String,java.lang.String)[pri:4, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:47:53 IST" name="loginWithDiffUserNameAndPassword" data-provider="dataprovider5" finished-at="2023-02-14T21:47:58 IST" duration-ms="4793" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dmeo User4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gre]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithDiffUserNameAndPassword -->
+        <test-method signature="loginWithDiffUserNameAndPassword(java.lang.String,java.lang.String)[pri:4, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:47:58 IST" name="loginWithDiffUserNameAndPassword" data-provider="dataprovider5" finished-at="2023-02-14T21:48:06 IST" duration-ms="7447" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dmeo User5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[To resolve this issue, you need to make sure that the "com.utilities.Utilities.book" object is properly initialized and has a value before it is used in your code. This can be done by creating a new instance of the Workbook class, or by checking if the object is null and initializing it before trying to use it.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithDiffUserNameAndPassword -->
+        <test-method signature="loginWithDiffUserNameAndPassword(java.lang.String,java.lang.String)[pri:4, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:48:06 IST" name="loginWithDiffUserNameAndPassword" data-provider="dataprovider5" finished-at="2023-02-14T21:48:10 IST" duration-ms="4825" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dmeo User6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Green123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithDiffUserNameAndPassword -->
+        <test-method signature="loginWithDiffUserNameAndPassword(java.lang.String,java.lang.String)[pri:4, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:48:10 IST" name="loginWithDiffUserNameAndPassword" data-provider="dataprovider5" finished-at="2023-02-14T21:48:17 IST" duration-ms="6985" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DemoUser7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[green$$&&@@!!**\\]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithDiffUserNameAndPassword -->
+        <test-method signature="loginWithValidUserNameInvalidPassword(java.lang.String,java.lang.String)[pri:5, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:48:17 IST" name="loginWithValidUserNameInvalidPassword" data-provider="dataprovider6" finished-at="2023-02-14T21:48:20 IST" duration-ms="2396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Demo User1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123*123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidUserNameInvalidPassword -->
+        <test-method signature="loginWithInvldUserNameAndValidPassword(java.lang.String,java.lang.String)[pri:6, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:48:20 IST" name="loginWithInvldUserNameAndValidPassword" data-provider="dataprovider7" finished-at="2023-02-14T21:48:23 IST" duration-ms="2507" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Demo Usr1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvldUserNameAndValidPassword -->
+        <test-method signature="loginWithInvldUserNameAndInvalidPassword(java.lang.String,java.lang.String)[pri:7, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:48:23 IST" name="loginWithInvldUserNameAndInvalidPassword" data-provider="dataprovider8" finished-at="2023-02-14T21:48:24 IST" duration-ms="1724" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dmo Usr1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[147785466]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvldUserNameAndInvalidPassword -->
+        <test-method signature="selectingTheCatagories(java.lang.String,java.lang.String)[pri:8, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:48:25 IST" name="selectingTheCatagories" data-provider="dataprovider9" finished-at="2023-02-14T21:48:39 IST" duration-ms="14164" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Demo User1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectingTheCatagories -->
+        <test-method signature="sendMessageWithAllDetails(java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:48:39 IST" name="sendMessageWithAllDetails" data-provider="dataprovider10" finished-at="2023-02-14T21:48:41 IST" duration-ms="1773" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[newuser1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New User1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[It’s a sample message for test puupose]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMessageWithAllDetails -->
+        <test-method signature="sendMessageWithAllDetails(java.lang.String,java.lang.String,java.lang.String)[pri:9, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:48:41 IST" name="sendMessageWithAllDetails" data-provider="dataprovider10" finished-at="2023-02-14T21:48:50 IST" duration-ms="8928" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[newuser1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New User1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMessageWithAllDetails -->
+        <test-method signature="aboutPageAccess()[pri:10, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:48:50 IST" name="aboutPageAccess" finished-at="2023-02-14T21:48:52 IST" duration-ms="2202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aboutPageAccess -->
+        <test-method signature="aboutAsVideoPlayButton()[pri:11, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:48:52 IST" name="aboutAsVideoPlayButton" finished-at="2023-02-14T21:48:52 IST" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aboutAsVideoPlayButton -->
+        <test-method signature="aboutAsVideoPouseButton()[pri:12, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:48:52 IST" name="aboutAsVideoPouseButton" finished-at="2023-02-14T21:48:52 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aboutAsVideoPouseButton -->
+        <test-method signature="aboutAsVideoFullScreen()[pri:13, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:48:52 IST" name="aboutAsVideoFullScreen" finished-at="2023-02-14T21:48:53 IST" duration-ms="647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aboutAsVideoFullScreen -->
+        <test-method signature="cartFunctionality()[pri:15, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:48:53 IST" name="cartFunctionality" finished-at="2023-02-14T21:48:57 IST" duration-ms="4360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartFunctionality -->
+        <test-method signature="addToCartFuntionlity()[pri:16, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:48:57 IST" name="addToCartFuntionlity" finished-at="2023-02-14T21:49:05 IST" duration-ms="7928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartFuntionlity -->
+        <test-method signature="deleteProductFromCart()[pri:17, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:49:05 IST" name="deleteProductFromCart" finished-at="2023-02-14T21:49:05 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteProductFromCart -->
+        <test-method signature="placeTheOrderFunctionality()[pri:18, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:49:05 IST" name="placeTheOrderFunctionality" finished-at="2023-02-14T21:49:13 IST" duration-ms="7300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeTheOrderFunctionality -->
+        <test-method signature="purchaseTheOrderWhitoutFillingPlaceTheOrderForm()[pri:19, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:49:13 IST" name="purchaseTheOrderWhitoutFillingPlaceTheOrderForm" finished-at="2023-02-14T21:49:14 IST" duration-ms="909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseTheOrderWhitoutFillingPlaceTheOrderForm -->
+        <test-method signature="purchaseTheProductWithUserDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:19, instance:com.test.HomePageTestCases@72e5a8e]" started-at="2023-02-14T21:49:14 IST" name="purchaseTheProductWithUserDetails" data-provider="dataprovider12" finished-at="2023-02-14T21:49:16 IST" duration-ms="2276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DemoUser1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kerala]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[457889634521]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[March]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2028]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchaseTheProductWithUserDetails -->
+      </class> <!-- com.test.HomePageTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

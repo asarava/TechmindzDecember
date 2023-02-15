@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>E:\Eclipse\ProjectDemoBlaze\Project_Demo_Blaze\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">33 methods,   33 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="URL(PRODUCT STORE, PRODUCT STORE)">URL(PRODUCT STORE, PRODUCT STORE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="aboutAsVideoFullScreen">aboutAsVideoFullScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="aboutAsVideoPlayButton">aboutAsVideoPlayButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="aboutAsVideoPouseButton">aboutAsVideoPouseButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="aboutPageAccess">aboutPageAccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="addToCartFuntionlity">addToCartFuntionlity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="cartFunctionality">cartFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="deleteProductFromCart">deleteProductFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="loginWithDiffUserNameAndPassword(Demo User2, green commet)">loginWithDiffUserNameAndPassword(Demo User2, green commet)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="loginWithDiffUserNameAndPassword(Dmeo User5, To resolve this issue, you need to make sure that the &quot;com.utilities.Utilities.book&quot; obj...)">loginWithDiffUserNameAndPassword(Dmeo User5, To resolve this issue, you need to make sure that the "com.utilities.Utilities.book" obj...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="loginWithDiffUserNameAndPassword(DMEO USER3, GREEN COMMET)">loginWithDiffUserNameAndPassword(DMEO USER3, GREEN COMMET)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="loginWithDiffUserNameAndPassword(DemoUser7, green$$&amp;&amp;@@!!**\\)">loginWithDiffUserNameAndPassword(DemoUser7, green$$&&@@!!**\\)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="loginWithDiffUserNameAndPassword(Demo User1, 123456)">loginWithDiffUserNameAndPassword(Demo User1, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="loginWithDiffUserNameAndPassword(Dmeo User4, gre)">loginWithDiffUserNameAndPassword(Dmeo User4, gre)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="loginWithDiffUserNameAndPassword(Dmeo User6, Green123)">loginWithDiffUserNameAndPassword(Dmeo User6, Green123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="loginWithInvldUserNameAndInvalidPassword(Dmo Usr1, 147785466)">loginWithInvldUserNameAndInvalidPassword(Dmo Usr1, 147785466)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="loginWithInvldUserNameAndValidPassword(Demo Usr1, 123456)">loginWithInvldUserNameAndValidPassword(Demo Usr1, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="loginWithValidUserNameInvalidPassword(Demo User1, 123*123)">loginWithValidUserNameInvalidPassword(Demo User1, 123*123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="placeTheOrderFunctionality">placeTheOrderFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="purchaseTheOrderWhitoutFillingPlaceTheOrderForm">purchaseTheOrderWhitoutFillingPlaceTheOrderForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="purchaseTheProductWithUserDetails(DemoUser1, India, Kerala, 457889634521, March, 2028)">purchaseTheProductWithUserDetails(DemoUser1, India, Kerala, 457889634521, March, 2028)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="selectingTheCatagories(Demo User1, 123456)">selectingTheCatagories(Demo User1, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="sendMessageWithAllDetails(newuser1@gmail.com, New User1, Lorem Ipsum is simply dummy text of the printing and typesetting indu...)">sendMessageWithAllDetails(newuser1@gmail.com, New User1, Lorem Ipsum is simply dummy text of the printing and typesetting indu...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="sendMessageWithAllDetails(newuser1@gmail.com, New User1, It’s a sample message for test puupose)">sendMessageWithAllDetails(newuser1@gmail.com, New User1, It’s a sample message for test puupose)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="signUp(DMEO USER3, GREEN COMMET)">signUp(DMEO USER3, GREEN COMMET)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="signUp(Dmeo User5, To resolve this issue, you need to make sure that the &quot;com.utilities.Utilities.book&quot; obj...)">signUp(Dmeo User5, To resolve this issue, you need to make sure that the "com.utilities.Utilities.book" obj...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="signUp(Dmeo User6, Green123)">signUp(Dmeo User6, Green123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="signUp(Demo User2, green commet)">signUp(Demo User2, green commet)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="signUp(DemoUser7, green$$&amp;&amp;@@!!**\\)">signUp(DemoUser7, green$$&&@@!!**\\)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="signUp(Demo User1, 123456)">signUp(Demo User1, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="signUp(Dmeo User4, gre)">signUp(Dmeo User4, gre)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="signUpWithoutPassword(User123, 12345)">signUpWithoutPassword(User123, 12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.HomePageTestCases" class="method navigator-link" hash-for-method="signUpWithoutUserName(User123, 12345)">signUpWithoutUserName(User123, 12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.HomePageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="URL(PRODUCT STORE, PRODUCT STORE)">
+                  </a> <!-- URL(PRODUCT STORE, PRODUCT STORE) -->
+                  <span class="method-name">URL</span>
+                  <span class="parameters">(PRODUCT STORE, PRODUCT STORE)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutAsVideoFullScreen">
+                  </a> <!-- aboutAsVideoFullScreen -->
+                  <span class="method-name">aboutAsVideoFullScreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutAsVideoPlayButton">
+                  </a> <!-- aboutAsVideoPlayButton -->
+                  <span class="method-name">aboutAsVideoPlayButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutAsVideoPouseButton">
+                  </a> <!-- aboutAsVideoPouseButton -->
+                  <span class="method-name">aboutAsVideoPouseButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutPageAccess">
+                  </a> <!-- aboutPageAccess -->
+                  <span class="method-name">aboutPageAccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCartFuntionlity">
+                  </a> <!-- addToCartFuntionlity -->
+                  <span class="method-name">addToCartFuntionlity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cartFunctionality">
+                  </a> <!-- cartFunctionality -->
+                  <span class="method-name">cartFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteProductFromCart">
+                  </a> <!-- deleteProductFromCart -->
+                  <span class="method-name">deleteProductFromCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithDiffUserNameAndPassword(Demo User2, green commet)">
+                  </a> <!-- loginWithDiffUserNameAndPassword(Demo User2, green commet) -->
+                  <span class="method-name">loginWithDiffUserNameAndPassword</span>
+                  <span class="parameters">(Demo User2, green commet)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithDiffUserNameAndPassword(Dmeo User5, To resolve this issue, you need to make sure that the &quot;com.utilities.Utilities.book&quot; obj...)">
+                  </a> <!-- loginWithDiffUserNameAndPassword(Dmeo User5, To resolve this issue, you need to make sure that the "com.utilities.Utilities.book" obj...) -->
+                  <span class="method-name">loginWithDiffUserNameAndPassword</span>
+                  <span class="parameters">(Dmeo User5, To resolve this issue, you need to make sure that the "com.utilities.Utilities.book" object is properly initialized and has a value before it is used in your code. This can be done by creating a new instance of the Workbook class, or by checking if the object is null and initializing it before trying to use it.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithDiffUserNameAndPassword(DMEO USER3, GREEN COMMET)">
+                  </a> <!-- loginWithDiffUserNameAndPassword(DMEO USER3, GREEN COMMET) -->
+                  <span class="method-name">loginWithDiffUserNameAndPassword</span>
+                  <span class="parameters">(DMEO USER3, GREEN COMMET)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithDiffUserNameAndPassword(DemoUser7, green$$&amp;&amp;@@!!**\\)">
+                  </a> <!-- loginWithDiffUserNameAndPassword(DemoUser7, green$$&&@@!!**\\) -->
+                  <span class="method-name">loginWithDiffUserNameAndPassword</span>
+                  <span class="parameters">(DemoUser7, green$$&&@@!!**\\)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithDiffUserNameAndPassword(Demo User1, 123456)">
+                  </a> <!-- loginWithDiffUserNameAndPassword(Demo User1, 123456) -->
+                  <span class="method-name">loginWithDiffUserNameAndPassword</span>
+                  <span class="parameters">(Demo User1, 123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithDiffUserNameAndPassword(Dmeo User4, gre)">
+                  </a> <!-- loginWithDiffUserNameAndPassword(Dmeo User4, gre) -->
+                  <span class="method-name">loginWithDiffUserNameAndPassword</span>
+                  <span class="parameters">(Dmeo User4, gre)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithDiffUserNameAndPassword(Dmeo User6, Green123)">
+                  </a> <!-- loginWithDiffUserNameAndPassword(Dmeo User6, Green123) -->
+                  <span class="method-name">loginWithDiffUserNameAndPassword</span>
+                  <span class="parameters">(Dmeo User6, Green123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInvldUserNameAndInvalidPassword(Dmo Usr1, 147785466)">
+                  </a> <!-- loginWithInvldUserNameAndInvalidPassword(Dmo Usr1, 147785466) -->
+                  <span class="method-name">loginWithInvldUserNameAndInvalidPassword</span>
+                  <span class="parameters">(Dmo Usr1, 147785466)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInvldUserNameAndValidPassword(Demo Usr1, 123456)">
+                  </a> <!-- loginWithInvldUserNameAndValidPassword(Demo Usr1, 123456) -->
+                  <span class="method-name">loginWithInvldUserNameAndValidPassword</span>
+                  <span class="parameters">(Demo Usr1, 123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidUserNameInvalidPassword(Demo User1, 123*123)">
+                  </a> <!-- loginWithValidUserNameInvalidPassword(Demo User1, 123*123) -->
+                  <span class="method-name">loginWithValidUserNameInvalidPassword</span>
+                  <span class="parameters">(Demo User1, 123*123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeTheOrderFunctionality">
+                  </a> <!-- placeTheOrderFunctionality -->
+                  <span class="method-name">placeTheOrderFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="purchaseTheOrderWhitoutFillingPlaceTheOrderForm">
+                  </a> <!-- purchaseTheOrderWhitoutFillingPlaceTheOrderForm -->
+                  <span class="method-name">purchaseTheOrderWhitoutFillingPlaceTheOrderForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="purchaseTheProductWithUserDetails(DemoUser1, India, Kerala, 457889634521, March, 2028)">
+                  </a> <!-- purchaseTheProductWithUserDetails(DemoUser1, India, Kerala, 457889634521, March, 2028) -->
+                  <span class="method-name">purchaseTheProductWithUserDetails</span>
+                  <span class="parameters">(DemoUser1, India, Kerala, 457889634521, March, 2028)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectingTheCatagories(Demo User1, 123456)">
+                  </a> <!-- selectingTheCatagories(Demo User1, 123456) -->
+                  <span class="method-name">selectingTheCatagories</span>
+                  <span class="parameters">(Demo User1, 123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendMessageWithAllDetails(newuser1@gmail.com, New User1, Lorem Ipsum is simply dummy text of the printing and typesetting indu...)">
+                  </a> <!-- sendMessageWithAllDetails(newuser1@gmail.com, New User1, Lorem Ipsum is simply dummy text of the printing and typesetting indu...) -->
+                  <span class="method-name">sendMessageWithAllDetails</span>
+                  <span class="parameters">(newuser1@gmail.com, New User1, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendMessageWithAllDetails(newuser1@gmail.com, New User1, It’s a sample message for test puupose)">
+                  </a> <!-- sendMessageWithAllDetails(newuser1@gmail.com, New User1, It’s a sample message for test puupose) -->
+                  <span class="method-name">sendMessageWithAllDetails</span>
+                  <span class="parameters">(newuser1@gmail.com, New User1, It’s a sample message for test puupose)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUp(DMEO USER3, GREEN COMMET)">
+                  </a> <!-- signUp(DMEO USER3, GREEN COMMET) -->
+                  <span class="method-name">signUp</span>
+                  <span class="parameters">(DMEO USER3, GREEN COMMET)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUp(Dmeo User5, To resolve this issue, you need to make sure that the &quot;com.utilities.Utilities.book&quot; obj...)">
+                  </a> <!-- signUp(Dmeo User5, To resolve this issue, you need to make sure that the "com.utilities.Utilities.book" obj...) -->
+                  <span class="method-name">signUp</span>
+                  <span class="parameters">(Dmeo User5, To resolve this issue, you need to make sure that the "com.utilities.Utilities.book" object is properly initialized and has a value before it is used in your code. This can be done by creating a new instance of the Workbook class, or by checking if the object is null and initializing it before trying to use it.)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUp(Dmeo User6, Green123)">
+                  </a> <!-- signUp(Dmeo User6, Green123) -->
+                  <span class="method-name">signUp</span>
+                  <span class="parameters">(Dmeo User6, Green123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUp(Demo User2, green commet)">
+                  </a> <!-- signUp(Demo User2, green commet) -->
+                  <span class="method-name">signUp</span>
+                  <span class="parameters">(Demo User2, green commet)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUp(DemoUser7, green$$&amp;&amp;@@!!**\\)">
+                  </a> <!-- signUp(DemoUser7, green$$&&@@!!**\\) -->
+                  <span class="method-name">signUp</span>
+                  <span class="parameters">(DemoUser7, green$$&&@@!!**\\)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUp(Demo User1, 123456)">
+                  </a> <!-- signUp(Demo User1, 123456) -->
+                  <span class="method-name">signUp</span>
+                  <span class="parameters">(Demo User1, 123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUp(Dmeo User4, gre)">
+                  </a> <!-- signUp(Dmeo User4, gre) -->
+                  <span class="method-name">signUp</span>
+                  <span class="parameters">(Dmeo User4, gre)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpWithoutPassword(User123, 12345)">
+                  </a> <!-- signUpWithoutPassword(User123, 12345) -->
+                  <span class="method-name">signUpWithoutPassword</span>
+                  <span class="parameters">(User123, 12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpWithoutUserName(User123, 12345)">
+                  </a> <!-- signUpWithoutUserName(User123, 12345) -->
+                  <span class="method-name">signUpWithoutUserName</span>
+                  <span class="parameters">(User123, 12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Eclipse\ProjectDemoBlaze\Project_Demo_Blaze\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.test.HomePageTestCases&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;sampleLogin&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.test.HomePageTestCases --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(33);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'selectingTheCatagories')
+data.setCell(0, 2, 'com.test.HomePageTestCases')
+data.setCell(0, 3, 14164);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'sendMessageWithAllDetails')
+data.setCell(1, 2, 'com.test.HomePageTestCases')
+data.setCell(1, 3, 8928);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addToCartFuntionlity')
+data.setCell(2, 2, 'com.test.HomePageTestCases')
+data.setCell(2, 3, 7928);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginWithDiffUserNameAndPassword')
+data.setCell(3, 2, 'com.test.HomePageTestCases')
+data.setCell(3, 3, 7608);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginWithDiffUserNameAndPassword')
+data.setCell(4, 2, 'com.test.HomePageTestCases')
+data.setCell(4, 3, 7447);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'placeTheOrderFunctionality')
+data.setCell(5, 2, 'com.test.HomePageTestCases')
+data.setCell(5, 3, 7300);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginWithDiffUserNameAndPassword')
+data.setCell(6, 2, 'com.test.HomePageTestCases')
+data.setCell(6, 3, 7055);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginWithDiffUserNameAndPassword')
+data.setCell(7, 2, 'com.test.HomePageTestCases')
+data.setCell(7, 3, 6985);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loginWithDiffUserNameAndPassword')
+data.setCell(8, 2, 'com.test.HomePageTestCases')
+data.setCell(8, 3, 4971);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginWithDiffUserNameAndPassword')
+data.setCell(9, 2, 'com.test.HomePageTestCases')
+data.setCell(9, 3, 4825);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'loginWithDiffUserNameAndPassword')
+data.setCell(10, 2, 'com.test.HomePageTestCases')
+data.setCell(10, 3, 4793);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'cartFunctionality')
+data.setCell(11, 2, 'com.test.HomePageTestCases')
+data.setCell(11, 3, 4360);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'signUp')
+data.setCell(12, 2, 'com.test.HomePageTestCases')
+data.setCell(12, 3, 3422);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'signUp')
+data.setCell(13, 2, 'com.test.HomePageTestCases')
+data.setCell(13, 3, 3397);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'signUp')
+data.setCell(14, 2, 'com.test.HomePageTestCases')
+data.setCell(14, 3, 3252);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'signUp')
+data.setCell(15, 2, 'com.test.HomePageTestCases')
+data.setCell(15, 3, 2806);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'signUp')
+data.setCell(16, 2, 'com.test.HomePageTestCases')
+data.setCell(16, 3, 2717);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'loginWithInvldUserNameAndValidPassword')
+data.setCell(17, 2, 'com.test.HomePageTestCases')
+data.setCell(17, 3, 2507);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'loginWithValidUserNameInvalidPassword')
+data.setCell(18, 2, 'com.test.HomePageTestCases')
+data.setCell(18, 3, 2396);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'signUp')
+data.setCell(19, 2, 'com.test.HomePageTestCases')
+data.setCell(19, 3, 2302);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'purchaseTheProductWithUserDetails')
+data.setCell(20, 2, 'com.test.HomePageTestCases')
+data.setCell(20, 3, 2276);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'signUp')
+data.setCell(21, 2, 'com.test.HomePageTestCases')
+data.setCell(21, 3, 2243);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'aboutPageAccess')
+data.setCell(22, 2, 'com.test.HomePageTestCases')
+data.setCell(22, 3, 2202);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'sendMessageWithAllDetails')
+data.setCell(23, 2, 'com.test.HomePageTestCases')
+data.setCell(23, 3, 1773);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'loginWithInvldUserNameAndInvalidPassword')
+data.setCell(24, 2, 'com.test.HomePageTestCases')
+data.setCell(24, 3, 1724);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'signUpWithoutPassword')
+data.setCell(25, 2, 'com.test.HomePageTestCases')
+data.setCell(25, 3, 1416);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'signUpWithoutUserName')
+data.setCell(26, 2, 'com.test.HomePageTestCases')
+data.setCell(26, 3, 1334);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'purchaseTheOrderWhitoutFillingPlaceTheOrderForm')
+data.setCell(27, 2, 'com.test.HomePageTestCases')
+data.setCell(27, 3, 909);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'aboutAsVideoFullScreen')
+data.setCell(28, 2, 'com.test.HomePageTestCases')
+data.setCell(28, 3, 647);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'URL')
+data.setCell(29, 2, 'com.test.HomePageTestCases')
+data.setCell(29, 3, 357);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'aboutAsVideoPlayButton')
+data.setCell(30, 2, 'com.test.HomePageTestCases')
+data.setCell(30, 3, 312);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'aboutAsVideoPouseButton')
+data.setCell(31, 2, 'com.test.HomePageTestCases')
+data.setCell(31, 3, 282);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'deleteProductFromCart')
+data.setCell(32, 2, 'com.test.HomePageTestCases')
+data.setCell(32, 3, 121);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.test.HomePageTestCases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">sampleLogin</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.HomePageTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">URL(PRODUCT STORE, PRODUCT STORE)</span>
+                <span class="method-start">27393 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signUp(Demo User1, 123456)</span>
+                <span class="method-start">28057 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signUp(Demo User2, green commet)</span>
+                <span class="method-start">30868 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signUp(DMEO USER3, GREEN COMMET)</span>
+                <span class="method-start">33113 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signUp(Dmeo User4, gre)</span>
+                <span class="method-start">35835 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signUp(Dmeo User5, To resolve this issue, you need to make sure that the "com.utilities.Utilities.book" obj...)</span>
+                <span class="method-start">39090 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signUp(Dmeo User6, Green123)</span>
+                <span class="method-start">42495 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signUp(DemoUser7, green$$&&@@!!**\\)</span>
+                <span class="method-start">45923 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signUpWithoutPassword(User123, 12345)</span>
+                <span class="method-start">48460 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signUpWithoutUserName(User123, 12345)</span>
+                <span class="method-start">50076 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithDiffUserNameAndPassword(Demo User1, 123456)</span>
+                <span class="method-start">51628 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithDiffUserNameAndPassword(Demo User2, green commet)</span>
+                <span class="method-start">58688 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithDiffUserNameAndPassword(DMEO USER3, GREEN COMMET)</span>
+                <span class="method-start">63660 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithDiffUserNameAndPassword(Dmeo User4, gre)</span>
+                <span class="method-start">71269 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithDiffUserNameAndPassword(Dmeo User5, To resolve this issue, you need to make sure that the "com.utilities.Utilities.book" obj...)</span>
+                <span class="method-start">76066 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithDiffUserNameAndPassword(Dmeo User6, Green123)</span>
+                <span class="method-start">83514 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithDiffUserNameAndPassword(DemoUser7, green$$&&@@!!**\\)</span>
+                <span class="method-start">88341 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithValidUserNameInvalidPassword(Demo User1, 123*123)</span>
+                <span class="method-start">95466 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithInvldUserNameAndValidPassword(Demo Usr1, 123456)</span>
+                <span class="method-start">98012 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginWithInvldUserNameAndInvalidPassword(Dmo Usr1, 147785466)</span>
+                <span class="method-start">100711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectingTheCatagories(Demo User1, 123456)</span>
+                <span class="method-start">102613 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sendMessageWithAllDetails(newuser1@gmail.com, New User1, It’s a sample message for test puupose)</span>
+                <span class="method-start">116873 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sendMessageWithAllDetails(newuser1@gmail.com, New User1, Lorem Ipsum is simply dummy text of the printing and typesetting indu...)</span>
+                <span class="method-start">118650 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">aboutPageAccess</span>
+                <span class="method-start">127591 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">aboutAsVideoPlayButton</span>
+                <span class="method-start">129798 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">aboutAsVideoPouseButton</span>
+                <span class="method-start">130112 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">aboutAsVideoFullScreen</span>
+                <span class="method-start">130397 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">cartFunctionality</span>
+                <span class="method-start">131047 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addToCartFuntionlity</span>
+                <span class="method-start">135409 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteProductFromCart</span>
+                <span class="method-start">143340 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">placeTheOrderFunctionality</span>
+                <span class="method-start">143463 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">purchaseTheOrderWhitoutFillingPlaceTheOrderForm</span>
+                <span class="method-start">150765 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">purchaseTheProductWithUserDetails(DemoUser1, India, Kerala, 457889634521, March, 2028)</span>
+                <span class="method-start">151840 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
