@@ -1,0 +1,144 @@
+package com.page;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import com.base.TestBase;
+import com.wrapper.Wrapper;
+
+
+public class HomePage extends TestBase {
+	
+	Wrapper objWrapper=new Wrapper();
+	
+	@FindBy(id="signin2") 
+	WebElement SignUpButton;
+	
+	@FindBy(xpath ="(//*[text()='Close'])[2]") 
+	WebElement sCloseButton;
+	
+	@FindBy(id = "login2")
+	WebElement loginButton;
+	
+	@FindBy(xpath ="(//*[text()='Close'])[3]") 
+	WebElement lCloseButton;
+	
+	@FindBy(xpath = "(//*[text()='About us'])[2]")
+	WebElement aboutUs;
+	
+	@FindBy(xpath = "(//*[text()='Close'])[4]")
+	WebElement CloseAboutUs;
+	
+	@FindBy(xpath = "(//*[text()='Contact'])")
+	WebElement Contact;
+	
+	@FindBy(xpath="(//input[@class='form-control'])[1]")
+	WebElement contactmail;
+	@FindBy(id = "recipient-name")
+	WebElement contactName;
+	@FindBy(id="message-text")
+	WebElement message;
+	
+	@FindBy(xpath = "//*[text()=\"Send message\"]")
+	WebElement sendMessage;
+	@FindBy(id = "cartur")
+	WebElement cart;
+	@FindBy(xpath = "(//a[@class=\"nav-link\"])[1]")
+	WebElement Home;
+	
+	@FindBy(id = "loginusername")
+	WebElement Lusername;
+	@FindBy(id = "loginpassword")
+	WebElement Lpassword;
+	@FindBy(xpath = "(//*[text()=\"Log in\"])[2]")
+	WebElement Login;
+	@FindBy(id = "sign-username")
+	WebElement Susername;
+	@FindBy(id = "sign-password")
+	WebElement Spassword;
+	@FindBy(xpath = "(//*[text()='Sign up'])[2]")
+	WebElement signup;
+	@FindBy(id="nameofuser")
+	WebElement nameofuser;
+	@FindBy(id="logout2")
+	WebElement logout;
+	
+	public HomePage() {
+		PageFactory.initElements(driver, this);
+	}
+	public void ClickSignUp() {
+		SignUpButton.click();
+	}
+	public void ClickSClose() {
+		objWrapper.wait(driver, sCloseButton);
+		sCloseButton.click();
+	}
+	public void ClickLogin() {
+		loginButton.click();
+	}
+	public void ClickLClose() {
+		objWrapper.wait(driver, lCloseButton);
+		lCloseButton.click();
+	}
+	public void AboutUs() {
+		aboutUs.click();
+	}
+	public void CloseAbout() {
+		objWrapper.wait(driver, CloseAboutUs);
+		CloseAboutUs.click();
+	}
+	public void Contact() {
+		Contact.click();
+	}
+	public void EnterMail(String Value) {
+		objWrapper.entertext(Value,contactmail, driver);
+	}
+	  public void EnterName(String Value) {
+		  objWrapper.entertext(Value, contactName, driver);
+	} 
+	  public void EnterMessage(String Value) {
+		 objWrapper.entertext(Value, message, driver); 
+	}
+	  public void sendmessage() {
+		  sendMessage.click();
+		  objWrapper.DismissAlert(driver, sendMessage);
+	  }
+	 public void Cart() {
+		 cart.click();
+	 }
+	 public void Home() {
+		Home.click();
+	 }
+	 public void EnterUserName(String value) {
+		 objWrapper.entertext(value, Lusername, driver);
+	 }
+	 public void EnterPassword(String value) {
+		 objWrapper.entertext(value, Lpassword, driver);
+	 }
+	 public void Login() {
+		 Login.click();
+		 objWrapper.waitforalert(driver);
+	 }
+	 public void LoginTest() {
+		 Login.click();
+	 }
+	 public void ClearText(WebElement element) {
+		 objWrapper.cleartext(Lusername);
+		 objWrapper.cleartext(Lpassword);
+	 }
+	 public void SignUp(String value) {
+		 objWrapper.entertext(value, Susername, driver);
+		 objWrapper.entertext(value, Spassword, driver);
+		 signup.click();
+		 objWrapper.waitforalert(driver);
+	 }
+	 public boolean NameOfUser(){
+		 objWrapper.wait(driver, nameofuser);
+		 return nameofuser.isDisplayed();		 
+	 }
+	 public boolean Logout(){
+		 objWrapper.wait(driver, logout);
+		 return logout.isDisplayed();		 
+	 }
+	 
+}

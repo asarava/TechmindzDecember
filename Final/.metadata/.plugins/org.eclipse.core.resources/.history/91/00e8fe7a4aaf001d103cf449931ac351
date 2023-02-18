@@ -1,0 +1,24 @@
+package com.loginpagetestcases;
+
+import org.testng.annotations.BeforeClass;
+
+import com.base.TestBase;
+import com.page.HomePage;
+
+public class LoginPageTestCases extends TestBase{
+	HomePage loginPage;
+	public  LoginPageTestCases() {
+		super();
+	}
+	@BeforeClass
+	public void setUp() {
+		initialization();
+		loginPage =new HomePage();
+	}
+	public void Login() {
+		loginPage.ClickLogin();
+		loginPage.EnterUserName("Test");
+		loginPage.EnterPassword("Test");
+		loginPage.Login();
+	}
+}

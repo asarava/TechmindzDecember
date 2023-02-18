@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.base.TestBase"/>
+    <fullyQualifiedTypeName name="com.loginpagetestcases.LoginPageTestCases"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.Alert"/>
+    <fullyQualifiedTypeName name="org.jsoup.select.Evaluator.Id"/>
+    <fullyQualifiedTypeName name="com.page.HomePage"/>
+    <fullyQualifiedTypeName name="net.bytebuddy.agent.builder.AgentBuilder.Default.WarmupStrategy.Enabled"/>
+    <fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFClientAnchor"/>
+    <fullyQualifiedTypeName name="javax.xml.xpath.XPath"/>
+    <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+    <fullyQualifiedTypeName name="org.testng.Assert"/>
+</qualifiedTypeNameHistroy>
